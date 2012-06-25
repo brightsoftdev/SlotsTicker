@@ -35,7 +35,7 @@
     slots.position = CGPointMake(slots.fontSize*1.5, 160);
     
     //set the slots color
-    slots.color = [[UIColor redColor] CGColor];
+    slots.color = [[UIColor whiteColor] CGColor];
 }
 
 - (IBAction)animateSlots:(id)sender
