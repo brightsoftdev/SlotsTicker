@@ -93,6 +93,7 @@
             textLayer.string = [NSString stringWithFormat:@"%i",i];
             textLayer.wrapped = YES;
             textLayer.fontSize = self.fontSize;
+            textLayer.contentsScale = [[UIScreen mainScreen] scale];
             textLayer.alignmentMode = kCAAlignmentCenter;
             textLayer.frame = CGRectMake(0,0, self.fontSize, self.fontSize);
             textLayer.position = CGPointMake(self.fontSize, self.fontSize * i + self.fontSize);
