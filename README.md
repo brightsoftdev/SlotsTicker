@@ -28,6 +28,9 @@ SlotsController *slots = [[SlotsController alloc] init];
 ### Animate the slots:
 
 ```objc
+//by setting the value property
+//the slots will animate from there current value
+//to the new value just set
 slots.value = 123456789;
 ```
 
