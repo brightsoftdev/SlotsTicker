@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     //init and add to layer
-    slots = [[SlotsController alloc] init];
+    slots = [[SlotsController alloc] initWithSize:2];
     [self.view.layer addSublayer:slots];
 
     //set font size

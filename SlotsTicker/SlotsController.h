@@ -27,4 +27,10 @@
 //the slot animation speed for all SlotLayers
 @property (nonatomic) float speed;
 
+//The amount of SlotLayers initialized (readonly)
+@property (nonatomic, readonly) int size;
+
+//Set the max amount of SlotLayers to be initialized (Default is 9)
+- (id) initWithSize:(int) size;
+
 @end

@@ -15,10 +15,16 @@ A Slot Machine like ticker using CoreAnimation.
 
 ## Example Useage
 
-### Create SlotsController:
+### Create SlotsController
+
+There are two ways to create the SlotsController:
 
 ```objc
+//This creates a default controller with 9 slots
 SlotsController *slots = [[SlotsController alloc] init];
+
+//This creates a controller with 2 slots 
+SlotsController *slots = [[SlotsController alloc] initWithSize:2];
 ```
 ### Add the controller to the layer:
 
