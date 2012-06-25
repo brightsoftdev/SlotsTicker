@@ -25,7 +25,11 @@
     [super viewDidLoad];
     
     //init and add to layer
-    slots = [[SlotsController alloc] initWithSize:2];
+    slots = [[SlotsController alloc] init];
+    
+    //can also init the controller by setting its max size (default is 9)
+    //slots = [[SlotsController alloc] initWithSize:2];
+    
     [self.view.layer addSublayer:slots];
 
     //set font size
@@ -41,7 +45,7 @@
 - (IBAction)animateSlots:(id)sender
 {
     int a = 0;
-    int b = 999999999;
+    int b = pow(10,slots.size)-1;
     int random = ((arc4random() % b-a+1) + a);
     
     randomNumberLabel.text = [NSString stringWithFormat:@"Generated Number: %09d",random];
